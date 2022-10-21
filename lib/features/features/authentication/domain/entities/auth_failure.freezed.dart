@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'auth_failure.dart';
@@ -11,31 +12,7 @@ part of 'auth_failure.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$AuthFailureTearOff {
-  const _$AuthFailureTearOff();
-
-  AuthSessionFailure sessionFailure() {
-    return const AuthSessionFailure();
-  }
-
-  AuthUnexpectedFailure unexpectedFailure() {
-    return const AuthUnexpectedFailure();
-  }
-
-  AuthUserNotFound userNotFound() {
-    return const AuthUserNotFound();
-  }
-
-  AuthCannotCreateUser cannotCreateUser() {
-    return const AuthCannotCreateUser();
-  }
-}
-
-/// @nodoc
-const $AuthFailure = _$AuthFailureTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$AuthFailure {
@@ -49,10 +26,10 @@ mixin _$AuthFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? sessionFailure,
-    TResult Function()? unexpectedFailure,
-    TResult Function()? userNotFound,
-    TResult Function()? cannotCreateUser,
+    TResult? Function()? sessionFailure,
+    TResult? Function()? unexpectedFailure,
+    TResult? Function()? userNotFound,
+    TResult? Function()? cannotCreateUser,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -74,10 +51,10 @@ mixin _$AuthFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthSessionFailure value)? sessionFailure,
-    TResult Function(AuthUnexpectedFailure value)? unexpectedFailure,
-    TResult Function(AuthUserNotFound value)? userNotFound,
-    TResult Function(AuthCannotCreateUser value)? cannotCreateUser,
+    TResult? Function(AuthSessionFailure value)? sessionFailure,
+    TResult? Function(AuthUnexpectedFailure value)? unexpectedFailure,
+    TResult? Function(AuthUserNotFound value)? userNotFound,
+    TResult? Function(AuthCannotCreateUser value)? cannotCreateUser,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -95,40 +72,38 @@ mixin _$AuthFailure {
 abstract class $AuthFailureCopyWith<$Res> {
   factory $AuthFailureCopyWith(
           AuthFailure value, $Res Function(AuthFailure) then) =
-      _$AuthFailureCopyWithImpl<$Res>;
+      _$AuthFailureCopyWithImpl<$Res, AuthFailure>;
 }
 
 /// @nodoc
-class _$AuthFailureCopyWithImpl<$Res> implements $AuthFailureCopyWith<$Res> {
+class _$AuthFailureCopyWithImpl<$Res, $Val extends AuthFailure>
+    implements $AuthFailureCopyWith<$Res> {
   _$AuthFailureCopyWithImpl(this._value, this._then);
 
-  final AuthFailure _value;
   // ignore: unused_field
-  final $Res Function(AuthFailure) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $AuthSessionFailureCopyWith<$Res> {
-  factory $AuthSessionFailureCopyWith(
-          AuthSessionFailure value, $Res Function(AuthSessionFailure) then) =
-      _$AuthSessionFailureCopyWithImpl<$Res>;
+abstract class _$$AuthSessionFailureCopyWith<$Res> {
+  factory _$$AuthSessionFailureCopyWith(_$AuthSessionFailure value,
+          $Res Function(_$AuthSessionFailure) then) =
+      __$$AuthSessionFailureCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AuthSessionFailureCopyWithImpl<$Res>
-    extends _$AuthFailureCopyWithImpl<$Res>
-    implements $AuthSessionFailureCopyWith<$Res> {
-  _$AuthSessionFailureCopyWithImpl(
-      AuthSessionFailure _value, $Res Function(AuthSessionFailure) _then)
-      : super(_value, (v) => _then(v as AuthSessionFailure));
-
-  @override
-  AuthSessionFailure get _value => super._value as AuthSessionFailure;
+class __$$AuthSessionFailureCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$AuthSessionFailure>
+    implements _$$AuthSessionFailureCopyWith<$Res> {
+  __$$AuthSessionFailureCopyWithImpl(
+      _$AuthSessionFailure _value, $Res Function(_$AuthSessionFailure) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-@Implements<LocalFailure>()
 class _$AuthSessionFailure implements AuthSessionFailure {
   const _$AuthSessionFailure();
 
@@ -140,7 +115,7 @@ class _$AuthSessionFailure implements AuthSessionFailure {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is AuthSessionFailure);
+        (other.runtimeType == runtimeType && other is _$AuthSessionFailure);
   }
 
   @override
@@ -160,10 +135,10 @@ class _$AuthSessionFailure implements AuthSessionFailure {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? sessionFailure,
-    TResult Function()? unexpectedFailure,
-    TResult Function()? userNotFound,
-    TResult Function()? cannotCreateUser,
+    TResult? Function()? sessionFailure,
+    TResult? Function()? unexpectedFailure,
+    TResult? Function()? userNotFound,
+    TResult? Function()? cannotCreateUser,
   }) {
     return sessionFailure?.call();
   }
@@ -197,10 +172,10 @@ class _$AuthSessionFailure implements AuthSessionFailure {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthSessionFailure value)? sessionFailure,
-    TResult Function(AuthUnexpectedFailure value)? unexpectedFailure,
-    TResult Function(AuthUserNotFound value)? userNotFound,
-    TResult Function(AuthCannotCreateUser value)? cannotCreateUser,
+    TResult? Function(AuthSessionFailure value)? sessionFailure,
+    TResult? Function(AuthUnexpectedFailure value)? unexpectedFailure,
+    TResult? Function(AuthUserNotFound value)? userNotFound,
+    TResult? Function(AuthCannotCreateUser value)? cannotCreateUser,
   }) {
     return sessionFailure?.call(this);
   }
@@ -226,27 +201,23 @@ abstract class AuthSessionFailure implements AuthFailure, LocalFailure {
 }
 
 /// @nodoc
-abstract class $AuthUnexpectedFailureCopyWith<$Res> {
-  factory $AuthUnexpectedFailureCopyWith(AuthUnexpectedFailure value,
-          $Res Function(AuthUnexpectedFailure) then) =
-      _$AuthUnexpectedFailureCopyWithImpl<$Res>;
+abstract class _$$AuthUnexpectedFailureCopyWith<$Res> {
+  factory _$$AuthUnexpectedFailureCopyWith(_$AuthUnexpectedFailure value,
+          $Res Function(_$AuthUnexpectedFailure) then) =
+      __$$AuthUnexpectedFailureCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AuthUnexpectedFailureCopyWithImpl<$Res>
-    extends _$AuthFailureCopyWithImpl<$Res>
-    implements $AuthUnexpectedFailureCopyWith<$Res> {
-  _$AuthUnexpectedFailureCopyWithImpl(
-      AuthUnexpectedFailure _value, $Res Function(AuthUnexpectedFailure) _then)
-      : super(_value, (v) => _then(v as AuthUnexpectedFailure));
-
-  @override
-  AuthUnexpectedFailure get _value => super._value as AuthUnexpectedFailure;
+class __$$AuthUnexpectedFailureCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$AuthUnexpectedFailure>
+    implements _$$AuthUnexpectedFailureCopyWith<$Res> {
+  __$$AuthUnexpectedFailureCopyWithImpl(_$AuthUnexpectedFailure _value,
+      $Res Function(_$AuthUnexpectedFailure) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-@Implements<UnexpectedFailure>()
 class _$AuthUnexpectedFailure implements AuthUnexpectedFailure {
   const _$AuthUnexpectedFailure();
 
@@ -258,7 +229,7 @@ class _$AuthUnexpectedFailure implements AuthUnexpectedFailure {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is AuthUnexpectedFailure);
+        (other.runtimeType == runtimeType && other is _$AuthUnexpectedFailure);
   }
 
   @override
@@ -278,10 +249,10 @@ class _$AuthUnexpectedFailure implements AuthUnexpectedFailure {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? sessionFailure,
-    TResult Function()? unexpectedFailure,
-    TResult Function()? userNotFound,
-    TResult Function()? cannotCreateUser,
+    TResult? Function()? sessionFailure,
+    TResult? Function()? unexpectedFailure,
+    TResult? Function()? userNotFound,
+    TResult? Function()? cannotCreateUser,
   }) {
     return unexpectedFailure?.call();
   }
@@ -315,10 +286,10 @@ class _$AuthUnexpectedFailure implements AuthUnexpectedFailure {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthSessionFailure value)? sessionFailure,
-    TResult Function(AuthUnexpectedFailure value)? unexpectedFailure,
-    TResult Function(AuthUserNotFound value)? userNotFound,
-    TResult Function(AuthCannotCreateUser value)? cannotCreateUser,
+    TResult? Function(AuthSessionFailure value)? sessionFailure,
+    TResult? Function(AuthUnexpectedFailure value)? unexpectedFailure,
+    TResult? Function(AuthUserNotFound value)? userNotFound,
+    TResult? Function(AuthCannotCreateUser value)? cannotCreateUser,
   }) {
     return unexpectedFailure?.call(this);
   }
@@ -344,27 +315,23 @@ abstract class AuthUnexpectedFailure implements AuthFailure, UnexpectedFailure {
 }
 
 /// @nodoc
-abstract class $AuthUserNotFoundCopyWith<$Res> {
-  factory $AuthUserNotFoundCopyWith(
-          AuthUserNotFound value, $Res Function(AuthUserNotFound) then) =
-      _$AuthUserNotFoundCopyWithImpl<$Res>;
+abstract class _$$AuthUserNotFoundCopyWith<$Res> {
+  factory _$$AuthUserNotFoundCopyWith(
+          _$AuthUserNotFound value, $Res Function(_$AuthUserNotFound) then) =
+      __$$AuthUserNotFoundCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AuthUserNotFoundCopyWithImpl<$Res>
-    extends _$AuthFailureCopyWithImpl<$Res>
-    implements $AuthUserNotFoundCopyWith<$Res> {
-  _$AuthUserNotFoundCopyWithImpl(
-      AuthUserNotFound _value, $Res Function(AuthUserNotFound) _then)
-      : super(_value, (v) => _then(v as AuthUserNotFound));
-
-  @override
-  AuthUserNotFound get _value => super._value as AuthUserNotFound;
+class __$$AuthUserNotFoundCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$AuthUserNotFound>
+    implements _$$AuthUserNotFoundCopyWith<$Res> {
+  __$$AuthUserNotFoundCopyWithImpl(
+      _$AuthUserNotFound _value, $Res Function(_$AuthUserNotFound) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-@Implements<LocalFailure>()
 class _$AuthUserNotFound implements AuthUserNotFound {
   const _$AuthUserNotFound();
 
@@ -376,7 +343,7 @@ class _$AuthUserNotFound implements AuthUserNotFound {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is AuthUserNotFound);
+        (other.runtimeType == runtimeType && other is _$AuthUserNotFound);
   }
 
   @override
@@ -396,10 +363,10 @@ class _$AuthUserNotFound implements AuthUserNotFound {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? sessionFailure,
-    TResult Function()? unexpectedFailure,
-    TResult Function()? userNotFound,
-    TResult Function()? cannotCreateUser,
+    TResult? Function()? sessionFailure,
+    TResult? Function()? unexpectedFailure,
+    TResult? Function()? userNotFound,
+    TResult? Function()? cannotCreateUser,
   }) {
     return userNotFound?.call();
   }
@@ -433,10 +400,10 @@ class _$AuthUserNotFound implements AuthUserNotFound {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthSessionFailure value)? sessionFailure,
-    TResult Function(AuthUnexpectedFailure value)? unexpectedFailure,
-    TResult Function(AuthUserNotFound value)? userNotFound,
-    TResult Function(AuthCannotCreateUser value)? cannotCreateUser,
+    TResult? Function(AuthSessionFailure value)? sessionFailure,
+    TResult? Function(AuthUnexpectedFailure value)? unexpectedFailure,
+    TResult? Function(AuthUserNotFound value)? userNotFound,
+    TResult? Function(AuthCannotCreateUser value)? cannotCreateUser,
   }) {
     return userNotFound?.call(this);
   }
@@ -462,27 +429,23 @@ abstract class AuthUserNotFound implements AuthFailure, LocalFailure {
 }
 
 /// @nodoc
-abstract class $AuthCannotCreateUserCopyWith<$Res> {
-  factory $AuthCannotCreateUserCopyWith(AuthCannotCreateUser value,
-          $Res Function(AuthCannotCreateUser) then) =
-      _$AuthCannotCreateUserCopyWithImpl<$Res>;
+abstract class _$$AuthCannotCreateUserCopyWith<$Res> {
+  factory _$$AuthCannotCreateUserCopyWith(_$AuthCannotCreateUser value,
+          $Res Function(_$AuthCannotCreateUser) then) =
+      __$$AuthCannotCreateUserCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AuthCannotCreateUserCopyWithImpl<$Res>
-    extends _$AuthFailureCopyWithImpl<$Res>
-    implements $AuthCannotCreateUserCopyWith<$Res> {
-  _$AuthCannotCreateUserCopyWithImpl(
-      AuthCannotCreateUser _value, $Res Function(AuthCannotCreateUser) _then)
-      : super(_value, (v) => _then(v as AuthCannotCreateUser));
-
-  @override
-  AuthCannotCreateUser get _value => super._value as AuthCannotCreateUser;
+class __$$AuthCannotCreateUserCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$AuthCannotCreateUser>
+    implements _$$AuthCannotCreateUserCopyWith<$Res> {
+  __$$AuthCannotCreateUserCopyWithImpl(_$AuthCannotCreateUser _value,
+      $Res Function(_$AuthCannotCreateUser) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-@Implements<LocalFailure>()
 class _$AuthCannotCreateUser implements AuthCannotCreateUser {
   const _$AuthCannotCreateUser();
 
@@ -494,7 +457,7 @@ class _$AuthCannotCreateUser implements AuthCannotCreateUser {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is AuthCannotCreateUser);
+        (other.runtimeType == runtimeType && other is _$AuthCannotCreateUser);
   }
 
   @override
@@ -514,10 +477,10 @@ class _$AuthCannotCreateUser implements AuthCannotCreateUser {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? sessionFailure,
-    TResult Function()? unexpectedFailure,
-    TResult Function()? userNotFound,
-    TResult Function()? cannotCreateUser,
+    TResult? Function()? sessionFailure,
+    TResult? Function()? unexpectedFailure,
+    TResult? Function()? userNotFound,
+    TResult? Function()? cannotCreateUser,
   }) {
     return cannotCreateUser?.call();
   }
@@ -551,10 +514,10 @@ class _$AuthCannotCreateUser implements AuthCannotCreateUser {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthSessionFailure value)? sessionFailure,
-    TResult Function(AuthUnexpectedFailure value)? unexpectedFailure,
-    TResult Function(AuthUserNotFound value)? userNotFound,
-    TResult Function(AuthCannotCreateUser value)? cannotCreateUser,
+    TResult? Function(AuthSessionFailure value)? sessionFailure,
+    TResult? Function(AuthUnexpectedFailure value)? unexpectedFailure,
+    TResult? Function(AuthUserNotFound value)? userNotFound,
+    TResult? Function(AuthCannotCreateUser value)? cannotCreateUser,
   }) {
     return cannotCreateUser?.call(this);
   }

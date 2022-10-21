@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'login_form.dart';
@@ -11,23 +12,7 @@ part of 'login_form.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$LoginFormTearOff {
-  const _$LoginFormTearOff();
-
-  _LoginForm call(
-      {required EmailAddress emailAddress, required Password password}) {
-    return _LoginForm(
-      emailAddress: emailAddress,
-      password: password,
-    );
-  }
-}
-
-/// @nodoc
-const $LoginForm = _$LoginFormTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$LoginForm {
@@ -42,65 +27,70 @@ mixin _$LoginForm {
 /// @nodoc
 abstract class $LoginFormCopyWith<$Res> {
   factory $LoginFormCopyWith(LoginForm value, $Res Function(LoginForm) then) =
-      _$LoginFormCopyWithImpl<$Res>;
+      _$LoginFormCopyWithImpl<$Res, LoginForm>;
+  @useResult
   $Res call({EmailAddress emailAddress, Password password});
 }
 
 /// @nodoc
-class _$LoginFormCopyWithImpl<$Res> implements $LoginFormCopyWith<$Res> {
+class _$LoginFormCopyWithImpl<$Res, $Val extends LoginForm>
+    implements $LoginFormCopyWith<$Res> {
   _$LoginFormCopyWithImpl(this._value, this._then);
 
-  final LoginForm _value;
   // ignore: unused_field
-  final $Res Function(LoginForm) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? emailAddress = freezed,
-    Object? password = freezed,
+    Object? emailAddress = null,
+    Object? password = null,
   }) {
     return _then(_value.copyWith(
-      emailAddress: emailAddress == freezed
+      emailAddress: null == emailAddress
           ? _value.emailAddress
           : emailAddress // ignore: cast_nullable_to_non_nullable
               as EmailAddress,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as Password,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$LoginFormCopyWith<$Res> implements $LoginFormCopyWith<$Res> {
-  factory _$LoginFormCopyWith(
-          _LoginForm value, $Res Function(_LoginForm) then) =
-      __$LoginFormCopyWithImpl<$Res>;
+abstract class _$$_LoginFormCopyWith<$Res> implements $LoginFormCopyWith<$Res> {
+  factory _$$_LoginFormCopyWith(
+          _$_LoginForm value, $Res Function(_$_LoginForm) then) =
+      __$$_LoginFormCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({EmailAddress emailAddress, Password password});
 }
 
 /// @nodoc
-class __$LoginFormCopyWithImpl<$Res> extends _$LoginFormCopyWithImpl<$Res>
-    implements _$LoginFormCopyWith<$Res> {
-  __$LoginFormCopyWithImpl(_LoginForm _value, $Res Function(_LoginForm) _then)
-      : super(_value, (v) => _then(v as _LoginForm));
+class __$$_LoginFormCopyWithImpl<$Res>
+    extends _$LoginFormCopyWithImpl<$Res, _$_LoginForm>
+    implements _$$_LoginFormCopyWith<$Res> {
+  __$$_LoginFormCopyWithImpl(
+      _$_LoginForm _value, $Res Function(_$_LoginForm) _then)
+      : super(_value, _then);
 
-  @override
-  _LoginForm get _value => super._value as _LoginForm;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? emailAddress = freezed,
-    Object? password = freezed,
+    Object? emailAddress = null,
+    Object? password = null,
   }) {
-    return _then(_LoginForm(
-      emailAddress: emailAddress == freezed
+    return _then(_$_LoginForm(
+      emailAddress: null == emailAddress
           ? _value.emailAddress
           : emailAddress // ignore: cast_nullable_to_non_nullable
               as EmailAddress,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as Password,
@@ -127,28 +117,27 @@ class _$_LoginForm implements _LoginForm {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _LoginForm &&
-            const DeepCollectionEquality()
-                .equals(other.emailAddress, emailAddress) &&
-            const DeepCollectionEquality().equals(other.password, password));
+            other is _$_LoginForm &&
+            (identical(other.emailAddress, emailAddress) ||
+                other.emailAddress == emailAddress) &&
+            (identical(other.password, password) ||
+                other.password == password));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(emailAddress),
-      const DeepCollectionEquality().hash(password));
+  int get hashCode => Object.hash(runtimeType, emailAddress, password);
 
   @JsonKey(ignore: true)
   @override
-  _$LoginFormCopyWith<_LoginForm> get copyWith =>
-      __$LoginFormCopyWithImpl<_LoginForm>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_LoginFormCopyWith<_$_LoginForm> get copyWith =>
+      __$$_LoginFormCopyWithImpl<_$_LoginForm>(this, _$identity);
 }
 
 abstract class _LoginForm implements LoginForm {
   const factory _LoginForm(
-      {required EmailAddress emailAddress,
-      required Password password}) = _$_LoginForm;
+      {required final EmailAddress emailAddress,
+      required final Password password}) = _$_LoginForm;
 
   @override
   EmailAddress get emailAddress;
@@ -156,6 +145,6 @@ abstract class _LoginForm implements LoginForm {
   Password get password;
   @override
   @JsonKey(ignore: true)
-  _$LoginFormCopyWith<_LoginForm> get copyWith =>
+  _$$_LoginFormCopyWith<_$_LoginForm> get copyWith =>
       throw _privateConstructorUsedError;
 }

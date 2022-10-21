@@ -63,8 +63,11 @@ class _$MyDatabase extends MyDatabase {
 
   AuthDao? _authDaoInstance;
 
-  Future<sqflite.Database> open(String path, List<Migration> migrations,
-      [Callback? callback]) async {
+  Future<sqflite.Database> open(
+    String path,
+    List<Migration> migrations, [
+    Callback? callback,
+  ]) async {
     final databaseOptions = sqflite.OpenDatabaseOptions(
       version: 1,
       onConfigure: (database) async {
@@ -97,8 +100,10 @@ class _$MyDatabase extends MyDatabase {
 }
 
 class _$AuthDao extends AuthDao {
-  _$AuthDao(this.database, this.changeListener)
-      : _queryAdapter = QueryAdapter(database),
+  _$AuthDao(
+    this.database,
+    this.changeListener,
+  )   : _queryAdapter = QueryAdapter(database),
         _userModelInsertionAdapter = InsertionAdapter(
             database,
             'users',
@@ -130,7 +135,9 @@ class _$AuthDao extends AuthDao {
 
   @override
   Future<UserModel?> findUserByEmailAndPassword(
-      String email, String password) async {
+    String email,
+    String password,
+  ) async {
     return _queryAdapter.query(
         'SELECT * FROM users WHERE email = ?1 AND password = ?2 LIMIT 1',
         mapper: (Map<String, Object?> row) => UserModel(

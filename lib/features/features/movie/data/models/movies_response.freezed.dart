@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'movies_response.dart';
@@ -11,29 +12,11 @@ part of 'movies_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 MoviesResponse _$MoviesResponseFromJson(Map<String, dynamic> json) {
   return _MoviesResponse.fromJson(json);
 }
-
-/// @nodoc
-class _$MoviesResponseTearOff {
-  const _$MoviesResponseTearOff();
-
-  _MoviesResponse call({List<DataListMovie>? results}) {
-    return _MoviesResponse(
-      results: results,
-    );
-  }
-
-  MoviesResponse fromJson(Map<String, Object?> json) {
-    return MoviesResponse.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MoviesResponse = _$MoviesResponseTearOff();
 
 /// @nodoc
 mixin _$MoviesResponse {
@@ -49,60 +32,62 @@ mixin _$MoviesResponse {
 abstract class $MoviesResponseCopyWith<$Res> {
   factory $MoviesResponseCopyWith(
           MoviesResponse value, $Res Function(MoviesResponse) then) =
-      _$MoviesResponseCopyWithImpl<$Res>;
+      _$MoviesResponseCopyWithImpl<$Res, MoviesResponse>;
+  @useResult
   $Res call({List<DataListMovie>? results});
 }
 
 /// @nodoc
-class _$MoviesResponseCopyWithImpl<$Res>
+class _$MoviesResponseCopyWithImpl<$Res, $Val extends MoviesResponse>
     implements $MoviesResponseCopyWith<$Res> {
   _$MoviesResponseCopyWithImpl(this._value, this._then);
 
-  final MoviesResponse _value;
   // ignore: unused_field
-  final $Res Function(MoviesResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? results = freezed,
   }) {
     return _then(_value.copyWith(
-      results: results == freezed
+      results: freezed == results
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
               as List<DataListMovie>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MoviesResponseCopyWith<$Res>
+abstract class _$$_MoviesResponseCopyWith<$Res>
     implements $MoviesResponseCopyWith<$Res> {
-  factory _$MoviesResponseCopyWith(
-          _MoviesResponse value, $Res Function(_MoviesResponse) then) =
-      __$MoviesResponseCopyWithImpl<$Res>;
+  factory _$$_MoviesResponseCopyWith(
+          _$_MoviesResponse value, $Res Function(_$_MoviesResponse) then) =
+      __$$_MoviesResponseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<DataListMovie>? results});
 }
 
 /// @nodoc
-class __$MoviesResponseCopyWithImpl<$Res>
-    extends _$MoviesResponseCopyWithImpl<$Res>
-    implements _$MoviesResponseCopyWith<$Res> {
-  __$MoviesResponseCopyWithImpl(
-      _MoviesResponse _value, $Res Function(_MoviesResponse) _then)
-      : super(_value, (v) => _then(v as _MoviesResponse));
+class __$$_MoviesResponseCopyWithImpl<$Res>
+    extends _$MoviesResponseCopyWithImpl<$Res, _$_MoviesResponse>
+    implements _$$_MoviesResponseCopyWith<$Res> {
+  __$$_MoviesResponseCopyWithImpl(
+      _$_MoviesResponse _value, $Res Function(_$_MoviesResponse) _then)
+      : super(_value, _then);
 
-  @override
-  _MoviesResponse get _value => super._value as _MoviesResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? results = freezed,
   }) {
-    return _then(_MoviesResponse(
-      results: results == freezed
-          ? _value.results
+    return _then(_$_MoviesResponse(
+      results: freezed == results
+          ? _value._results
           : results // ignore: cast_nullable_to_non_nullable
               as List<DataListMovie>?,
     ));
@@ -112,13 +97,20 @@ class __$MoviesResponseCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_MoviesResponse implements _MoviesResponse {
-  const _$_MoviesResponse({this.results});
+  const _$_MoviesResponse({final List<DataListMovie>? results})
+      : _results = results;
 
   factory _$_MoviesResponse.fromJson(Map<String, dynamic> json) =>
       _$$_MoviesResponseFromJson(json);
 
+  final List<DataListMovie>? _results;
   @override
-  final List<DataListMovie>? results;
+  List<DataListMovie>? get results {
+    final value = _results;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -129,27 +121,31 @@ class _$_MoviesResponse implements _MoviesResponse {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MoviesResponse &&
-            const DeepCollectionEquality().equals(other.results, results));
+            other is _$_MoviesResponse &&
+            const DeepCollectionEquality().equals(other._results, _results));
   }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(results));
 
   @JsonKey(ignore: true)
   @override
-  _$MoviesResponseCopyWith<_MoviesResponse> get copyWith =>
-      __$MoviesResponseCopyWithImpl<_MoviesResponse>(this, _$identity);
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_results));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_MoviesResponseCopyWith<_$_MoviesResponse> get copyWith =>
+      __$$_MoviesResponseCopyWithImpl<_$_MoviesResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoviesResponseToJson(this);
+    return _$$_MoviesResponseToJson(
+      this,
+    );
   }
 }
 
 abstract class _MoviesResponse implements MoviesResponse {
-  const factory _MoviesResponse({List<DataListMovie>? results}) =
+  const factory _MoviesResponse({final List<DataListMovie>? results}) =
       _$_MoviesResponse;
 
   factory _MoviesResponse.fromJson(Map<String, dynamic> json) =
@@ -159,62 +155,13 @@ abstract class _MoviesResponse implements MoviesResponse {
   List<DataListMovie>? get results;
   @override
   @JsonKey(ignore: true)
-  _$MoviesResponseCopyWith<_MoviesResponse> get copyWith =>
+  _$$_MoviesResponseCopyWith<_$_MoviesResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 DataListMovie _$DataListMovieFromJson(Map<String, dynamic> json) {
   return _DataListMovie.fromJson(json);
 }
-
-/// @nodoc
-class _$DataListMovieTearOff {
-  const _$DataListMovieTearOff();
-
-  _DataListMovie call(
-      {@JsonKey(name: 'adult') bool? adult,
-      @JsonKey(name: 'backdrop_path') String? backdropPath,
-      @JsonKey(name: 'id') int? id,
-      @JsonKey(name: 'title') String? title,
-      @JsonKey(name: 'original_language') String? originalLanguage,
-      @JsonKey(name: 'original_title') String? originalTitle,
-      @JsonKey(name: 'overview') String? overview,
-      @JsonKey(name: 'poster_path') String? poster,
-      @JsonKey(name: 'media_type') String? mediaType,
-      @JsonKey(name: 'genre_ids') List<int>? genreIds,
-      @JsonKey(name: 'popularity') double? popularity,
-      @JsonKey(name: 'release_date') String? year,
-      @JsonKey(name: 'video') bool? video,
-      @JsonKey(name: 'vote_average') double? votAverage,
-      @JsonKey(name: 'vote_count') int? voteCount,
-      @JsonKey(name: 'origin_country') List<String>? originCountry}) {
-    return _DataListMovie(
-      adult: adult,
-      backdropPath: backdropPath,
-      id: id,
-      title: title,
-      originalLanguage: originalLanguage,
-      originalTitle: originalTitle,
-      overview: overview,
-      poster: poster,
-      mediaType: mediaType,
-      genreIds: genreIds,
-      popularity: popularity,
-      year: year,
-      video: video,
-      votAverage: votAverage,
-      voteCount: voteCount,
-      originCountry: originCountry,
-    );
-  }
-
-  DataListMovie fromJson(Map<String, Object?> json) {
-    return DataListMovie.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $DataListMovie = _$DataListMovieTearOff();
 
 /// @nodoc
 mixin _$DataListMovie {
@@ -261,7 +208,8 @@ mixin _$DataListMovie {
 abstract class $DataListMovieCopyWith<$Res> {
   factory $DataListMovieCopyWith(
           DataListMovie value, $Res Function(DataListMovie) then) =
-      _$DataListMovieCopyWithImpl<$Res>;
+      _$DataListMovieCopyWithImpl<$Res, DataListMovie>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'adult') bool? adult,
       @JsonKey(name: 'backdrop_path') String? backdropPath,
@@ -282,14 +230,16 @@ abstract class $DataListMovieCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DataListMovieCopyWithImpl<$Res>
+class _$DataListMovieCopyWithImpl<$Res, $Val extends DataListMovie>
     implements $DataListMovieCopyWith<$Res> {
   _$DataListMovieCopyWithImpl(this._value, this._then);
 
-  final DataListMovie _value;
   // ignore: unused_field
-  final $Res Function(DataListMovie) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? adult = freezed,
@@ -310,81 +260,82 @@ class _$DataListMovieCopyWithImpl<$Res>
     Object? originCountry = freezed,
   }) {
     return _then(_value.copyWith(
-      adult: adult == freezed
+      adult: freezed == adult
           ? _value.adult
           : adult // ignore: cast_nullable_to_non_nullable
               as bool?,
-      backdropPath: backdropPath == freezed
+      backdropPath: freezed == backdropPath
           ? _value.backdropPath
           : backdropPath // ignore: cast_nullable_to_non_nullable
               as String?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int?,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      originalLanguage: originalLanguage == freezed
+      originalLanguage: freezed == originalLanguage
           ? _value.originalLanguage
           : originalLanguage // ignore: cast_nullable_to_non_nullable
               as String?,
-      originalTitle: originalTitle == freezed
+      originalTitle: freezed == originalTitle
           ? _value.originalTitle
           : originalTitle // ignore: cast_nullable_to_non_nullable
               as String?,
-      overview: overview == freezed
+      overview: freezed == overview
           ? _value.overview
           : overview // ignore: cast_nullable_to_non_nullable
               as String?,
-      poster: poster == freezed
+      poster: freezed == poster
           ? _value.poster
           : poster // ignore: cast_nullable_to_non_nullable
               as String?,
-      mediaType: mediaType == freezed
+      mediaType: freezed == mediaType
           ? _value.mediaType
           : mediaType // ignore: cast_nullable_to_non_nullable
               as String?,
-      genreIds: genreIds == freezed
+      genreIds: freezed == genreIds
           ? _value.genreIds
           : genreIds // ignore: cast_nullable_to_non_nullable
               as List<int>?,
-      popularity: popularity == freezed
+      popularity: freezed == popularity
           ? _value.popularity
           : popularity // ignore: cast_nullable_to_non_nullable
               as double?,
-      year: year == freezed
+      year: freezed == year
           ? _value.year
           : year // ignore: cast_nullable_to_non_nullable
               as String?,
-      video: video == freezed
+      video: freezed == video
           ? _value.video
           : video // ignore: cast_nullable_to_non_nullable
               as bool?,
-      votAverage: votAverage == freezed
+      votAverage: freezed == votAverage
           ? _value.votAverage
           : votAverage // ignore: cast_nullable_to_non_nullable
               as double?,
-      voteCount: voteCount == freezed
+      voteCount: freezed == voteCount
           ? _value.voteCount
           : voteCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      originCountry: originCountry == freezed
+      originCountry: freezed == originCountry
           ? _value.originCountry
           : originCountry // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DataListMovieCopyWith<$Res>
+abstract class _$$_DataListMovieCopyWith<$Res>
     implements $DataListMovieCopyWith<$Res> {
-  factory _$DataListMovieCopyWith(
-          _DataListMovie value, $Res Function(_DataListMovie) then) =
-      __$DataListMovieCopyWithImpl<$Res>;
+  factory _$$_DataListMovieCopyWith(
+          _$_DataListMovie value, $Res Function(_$_DataListMovie) then) =
+      __$$_DataListMovieCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'adult') bool? adult,
       @JsonKey(name: 'backdrop_path') String? backdropPath,
@@ -405,16 +356,14 @@ abstract class _$DataListMovieCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DataListMovieCopyWithImpl<$Res>
-    extends _$DataListMovieCopyWithImpl<$Res>
-    implements _$DataListMovieCopyWith<$Res> {
-  __$DataListMovieCopyWithImpl(
-      _DataListMovie _value, $Res Function(_DataListMovie) _then)
-      : super(_value, (v) => _then(v as _DataListMovie));
+class __$$_DataListMovieCopyWithImpl<$Res>
+    extends _$DataListMovieCopyWithImpl<$Res, _$_DataListMovie>
+    implements _$$_DataListMovieCopyWith<$Res> {
+  __$$_DataListMovieCopyWithImpl(
+      _$_DataListMovie _value, $Res Function(_$_DataListMovie) _then)
+      : super(_value, _then);
 
-  @override
-  _DataListMovie get _value => super._value as _DataListMovie;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? adult = freezed,
@@ -434,69 +383,69 @@ class __$DataListMovieCopyWithImpl<$Res>
     Object? voteCount = freezed,
     Object? originCountry = freezed,
   }) {
-    return _then(_DataListMovie(
-      adult: adult == freezed
+    return _then(_$_DataListMovie(
+      adult: freezed == adult
           ? _value.adult
           : adult // ignore: cast_nullable_to_non_nullable
               as bool?,
-      backdropPath: backdropPath == freezed
+      backdropPath: freezed == backdropPath
           ? _value.backdropPath
           : backdropPath // ignore: cast_nullable_to_non_nullable
               as String?,
-      id: id == freezed
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int?,
-      title: title == freezed
+      title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      originalLanguage: originalLanguage == freezed
+      originalLanguage: freezed == originalLanguage
           ? _value.originalLanguage
           : originalLanguage // ignore: cast_nullable_to_non_nullable
               as String?,
-      originalTitle: originalTitle == freezed
+      originalTitle: freezed == originalTitle
           ? _value.originalTitle
           : originalTitle // ignore: cast_nullable_to_non_nullable
               as String?,
-      overview: overview == freezed
+      overview: freezed == overview
           ? _value.overview
           : overview // ignore: cast_nullable_to_non_nullable
               as String?,
-      poster: poster == freezed
+      poster: freezed == poster
           ? _value.poster
           : poster // ignore: cast_nullable_to_non_nullable
               as String?,
-      mediaType: mediaType == freezed
+      mediaType: freezed == mediaType
           ? _value.mediaType
           : mediaType // ignore: cast_nullable_to_non_nullable
               as String?,
-      genreIds: genreIds == freezed
-          ? _value.genreIds
+      genreIds: freezed == genreIds
+          ? _value._genreIds
           : genreIds // ignore: cast_nullable_to_non_nullable
               as List<int>?,
-      popularity: popularity == freezed
+      popularity: freezed == popularity
           ? _value.popularity
           : popularity // ignore: cast_nullable_to_non_nullable
               as double?,
-      year: year == freezed
+      year: freezed == year
           ? _value.year
           : year // ignore: cast_nullable_to_non_nullable
               as String?,
-      video: video == freezed
+      video: freezed == video
           ? _value.video
           : video // ignore: cast_nullable_to_non_nullable
               as bool?,
-      votAverage: votAverage == freezed
+      votAverage: freezed == votAverage
           ? _value.votAverage
           : votAverage // ignore: cast_nullable_to_non_nullable
               as double?,
-      voteCount: voteCount == freezed
+      voteCount: freezed == voteCount
           ? _value.voteCount
           : voteCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      originCountry: originCountry == freezed
-          ? _value.originCountry
+      originCountry: freezed == originCountry
+          ? _value._originCountry
           : originCountry // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ));
@@ -516,13 +465,15 @@ class _$_DataListMovie implements _DataListMovie {
       @JsonKey(name: 'overview') this.overview,
       @JsonKey(name: 'poster_path') this.poster,
       @JsonKey(name: 'media_type') this.mediaType,
-      @JsonKey(name: 'genre_ids') this.genreIds,
+      @JsonKey(name: 'genre_ids') final List<int>? genreIds,
       @JsonKey(name: 'popularity') this.popularity,
       @JsonKey(name: 'release_date') this.year,
       @JsonKey(name: 'video') this.video,
       @JsonKey(name: 'vote_average') this.votAverage,
       @JsonKey(name: 'vote_count') this.voteCount,
-      @JsonKey(name: 'origin_country') this.originCountry});
+      @JsonKey(name: 'origin_country') final List<String>? originCountry})
+      : _genreIds = genreIds,
+        _originCountry = originCountry;
 
   factory _$_DataListMovie.fromJson(Map<String, dynamic> json) =>
       _$$_DataListMovieFromJson(json);
@@ -554,9 +505,16 @@ class _$_DataListMovie implements _DataListMovie {
   @override
   @JsonKey(name: 'media_type')
   final String? mediaType;
+  final List<int>? _genreIds;
   @override
   @JsonKey(name: 'genre_ids')
-  final List<int>? genreIds;
+  List<int>? get genreIds {
+    final value = _genreIds;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
   @JsonKey(name: 'popularity')
   final double? popularity;
@@ -572,9 +530,15 @@ class _$_DataListMovie implements _DataListMovie {
   @override
   @JsonKey(name: 'vote_count')
   final int? voteCount;
+  final List<String>? _originCountry;
   @override
   @JsonKey(name: 'origin_country')
-  final List<String>? originCountry;
+  List<String>? get originCountry {
+    final value = _originCountry;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -585,80 +549,87 @@ class _$_DataListMovie implements _DataListMovie {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DataListMovie &&
-            const DeepCollectionEquality().equals(other.adult, adult) &&
+            other is _$_DataListMovie &&
+            (identical(other.adult, adult) || other.adult == adult) &&
+            (identical(other.backdropPath, backdropPath) ||
+                other.backdropPath == backdropPath) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.originalLanguage, originalLanguage) ||
+                other.originalLanguage == originalLanguage) &&
+            (identical(other.originalTitle, originalTitle) ||
+                other.originalTitle == originalTitle) &&
+            (identical(other.overview, overview) ||
+                other.overview == overview) &&
+            (identical(other.poster, poster) || other.poster == poster) &&
+            (identical(other.mediaType, mediaType) ||
+                other.mediaType == mediaType) &&
+            const DeepCollectionEquality().equals(other._genreIds, _genreIds) &&
+            (identical(other.popularity, popularity) ||
+                other.popularity == popularity) &&
+            (identical(other.year, year) || other.year == year) &&
+            (identical(other.video, video) || other.video == video) &&
+            (identical(other.votAverage, votAverage) ||
+                other.votAverage == votAverage) &&
+            (identical(other.voteCount, voteCount) ||
+                other.voteCount == voteCount) &&
             const DeepCollectionEquality()
-                .equals(other.backdropPath, backdropPath) &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.originalLanguage, originalLanguage) &&
-            const DeepCollectionEquality()
-                .equals(other.originalTitle, originalTitle) &&
-            const DeepCollectionEquality().equals(other.overview, overview) &&
-            const DeepCollectionEquality().equals(other.poster, poster) &&
-            const DeepCollectionEquality().equals(other.mediaType, mediaType) &&
-            const DeepCollectionEquality().equals(other.genreIds, genreIds) &&
-            const DeepCollectionEquality()
-                .equals(other.popularity, popularity) &&
-            const DeepCollectionEquality().equals(other.year, year) &&
-            const DeepCollectionEquality().equals(other.video, video) &&
-            const DeepCollectionEquality()
-                .equals(other.votAverage, votAverage) &&
-            const DeepCollectionEquality().equals(other.voteCount, voteCount) &&
-            const DeepCollectionEquality()
-                .equals(other.originCountry, originCountry));
+                .equals(other._originCountry, _originCountry));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(adult),
-      const DeepCollectionEquality().hash(backdropPath),
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(originalLanguage),
-      const DeepCollectionEquality().hash(originalTitle),
-      const DeepCollectionEquality().hash(overview),
-      const DeepCollectionEquality().hash(poster),
-      const DeepCollectionEquality().hash(mediaType),
-      const DeepCollectionEquality().hash(genreIds),
-      const DeepCollectionEquality().hash(popularity),
-      const DeepCollectionEquality().hash(year),
-      const DeepCollectionEquality().hash(video),
-      const DeepCollectionEquality().hash(votAverage),
-      const DeepCollectionEquality().hash(voteCount),
-      const DeepCollectionEquality().hash(originCountry));
 
   @JsonKey(ignore: true)
   @override
-  _$DataListMovieCopyWith<_DataListMovie> get copyWith =>
-      __$DataListMovieCopyWithImpl<_DataListMovie>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      adult,
+      backdropPath,
+      id,
+      title,
+      originalLanguage,
+      originalTitle,
+      overview,
+      poster,
+      mediaType,
+      const DeepCollectionEquality().hash(_genreIds),
+      popularity,
+      year,
+      video,
+      votAverage,
+      voteCount,
+      const DeepCollectionEquality().hash(_originCountry));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_DataListMovieCopyWith<_$_DataListMovie> get copyWith =>
+      __$$_DataListMovieCopyWithImpl<_$_DataListMovie>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DataListMovieToJson(this);
+    return _$$_DataListMovieToJson(
+      this,
+    );
   }
 }
 
 abstract class _DataListMovie implements DataListMovie {
   const factory _DataListMovie(
-          {@JsonKey(name: 'adult') bool? adult,
-          @JsonKey(name: 'backdrop_path') String? backdropPath,
-          @JsonKey(name: 'id') int? id,
-          @JsonKey(name: 'title') String? title,
-          @JsonKey(name: 'original_language') String? originalLanguage,
-          @JsonKey(name: 'original_title') String? originalTitle,
-          @JsonKey(name: 'overview') String? overview,
-          @JsonKey(name: 'poster_path') String? poster,
-          @JsonKey(name: 'media_type') String? mediaType,
-          @JsonKey(name: 'genre_ids') List<int>? genreIds,
-          @JsonKey(name: 'popularity') double? popularity,
-          @JsonKey(name: 'release_date') String? year,
-          @JsonKey(name: 'video') bool? video,
-          @JsonKey(name: 'vote_average') double? votAverage,
-          @JsonKey(name: 'vote_count') int? voteCount,
-          @JsonKey(name: 'origin_country') List<String>? originCountry}) =
+          {@JsonKey(name: 'adult') final bool? adult,
+          @JsonKey(name: 'backdrop_path') final String? backdropPath,
+          @JsonKey(name: 'id') final int? id,
+          @JsonKey(name: 'title') final String? title,
+          @JsonKey(name: 'original_language') final String? originalLanguage,
+          @JsonKey(name: 'original_title') final String? originalTitle,
+          @JsonKey(name: 'overview') final String? overview,
+          @JsonKey(name: 'poster_path') final String? poster,
+          @JsonKey(name: 'media_type') final String? mediaType,
+          @JsonKey(name: 'genre_ids') final List<int>? genreIds,
+          @JsonKey(name: 'popularity') final double? popularity,
+          @JsonKey(name: 'release_date') final String? year,
+          @JsonKey(name: 'video') final bool? video,
+          @JsonKey(name: 'vote_average') final double? votAverage,
+          @JsonKey(name: 'vote_count') final int? voteCount,
+          @JsonKey(name: 'origin_country') final List<String>? originCountry}) =
       _$_DataListMovie;
 
   factory _DataListMovie.fromJson(Map<String, dynamic> json) =
@@ -714,6 +685,6 @@ abstract class _DataListMovie implements DataListMovie {
   List<String>? get originCountry;
   @override
   @JsonKey(ignore: true)
-  _$DataListMovieCopyWith<_DataListMovie> get copyWith =>
+  _$$_DataListMovieCopyWith<_$_DataListMovie> get copyWith =>
       throw _privateConstructorUsedError;
 }

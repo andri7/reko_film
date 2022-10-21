@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'movie_failure.dart';
@@ -11,23 +12,7 @@ part of 'movie_failure.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$MovieFailureTearOff {
-  const _$MovieFailureTearOff();
-
-  MovieMiddlewareFailure middlewareFailure() {
-    return const MovieMiddlewareFailure();
-  }
-
-  MovieServerFailure serverFailure() {
-    return const MovieServerFailure();
-  }
-}
-
-/// @nodoc
-const $MovieFailure = _$MovieFailureTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$MovieFailure {
@@ -39,8 +24,8 @@ mixin _$MovieFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? middlewareFailure,
-    TResult Function()? serverFailure,
+    TResult? Function()? middlewareFailure,
+    TResult? Function()? serverFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -58,8 +43,8 @@ mixin _$MovieFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(MovieMiddlewareFailure value)? middlewareFailure,
-    TResult Function(MovieServerFailure value)? serverFailure,
+    TResult? Function(MovieMiddlewareFailure value)? middlewareFailure,
+    TResult? Function(MovieServerFailure value)? serverFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -75,40 +60,38 @@ mixin _$MovieFailure {
 abstract class $MovieFailureCopyWith<$Res> {
   factory $MovieFailureCopyWith(
           MovieFailure value, $Res Function(MovieFailure) then) =
-      _$MovieFailureCopyWithImpl<$Res>;
+      _$MovieFailureCopyWithImpl<$Res, MovieFailure>;
 }
 
 /// @nodoc
-class _$MovieFailureCopyWithImpl<$Res> implements $MovieFailureCopyWith<$Res> {
+class _$MovieFailureCopyWithImpl<$Res, $Val extends MovieFailure>
+    implements $MovieFailureCopyWith<$Res> {
   _$MovieFailureCopyWithImpl(this._value, this._then);
 
-  final MovieFailure _value;
   // ignore: unused_field
-  final $Res Function(MovieFailure) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $MovieMiddlewareFailureCopyWith<$Res> {
-  factory $MovieMiddlewareFailureCopyWith(MovieMiddlewareFailure value,
-          $Res Function(MovieMiddlewareFailure) then) =
-      _$MovieMiddlewareFailureCopyWithImpl<$Res>;
+abstract class _$$MovieMiddlewareFailureCopyWith<$Res> {
+  factory _$$MovieMiddlewareFailureCopyWith(_$MovieMiddlewareFailure value,
+          $Res Function(_$MovieMiddlewareFailure) then) =
+      __$$MovieMiddlewareFailureCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$MovieMiddlewareFailureCopyWithImpl<$Res>
-    extends _$MovieFailureCopyWithImpl<$Res>
-    implements $MovieMiddlewareFailureCopyWith<$Res> {
-  _$MovieMiddlewareFailureCopyWithImpl(MovieMiddlewareFailure _value,
-      $Res Function(MovieMiddlewareFailure) _then)
-      : super(_value, (v) => _then(v as MovieMiddlewareFailure));
-
-  @override
-  MovieMiddlewareFailure get _value => super._value as MovieMiddlewareFailure;
+class __$$MovieMiddlewareFailureCopyWithImpl<$Res>
+    extends _$MovieFailureCopyWithImpl<$Res, _$MovieMiddlewareFailure>
+    implements _$$MovieMiddlewareFailureCopyWith<$Res> {
+  __$$MovieMiddlewareFailureCopyWithImpl(_$MovieMiddlewareFailure _value,
+      $Res Function(_$MovieMiddlewareFailure) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-@Implements<MiddlewareFailure>()
 class _$MovieMiddlewareFailure implements MovieMiddlewareFailure {
   const _$MovieMiddlewareFailure();
 
@@ -120,7 +103,7 @@ class _$MovieMiddlewareFailure implements MovieMiddlewareFailure {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is MovieMiddlewareFailure);
+        (other.runtimeType == runtimeType && other is _$MovieMiddlewareFailure);
   }
 
   @override
@@ -138,8 +121,8 @@ class _$MovieMiddlewareFailure implements MovieMiddlewareFailure {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? middlewareFailure,
-    TResult Function()? serverFailure,
+    TResult? Function()? middlewareFailure,
+    TResult? Function()? serverFailure,
   }) {
     return middlewareFailure?.call();
   }
@@ -169,8 +152,8 @@ class _$MovieMiddlewareFailure implements MovieMiddlewareFailure {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(MovieMiddlewareFailure value)? middlewareFailure,
-    TResult Function(MovieServerFailure value)? serverFailure,
+    TResult? Function(MovieMiddlewareFailure value)? middlewareFailure,
+    TResult? Function(MovieServerFailure value)? serverFailure,
   }) {
     return middlewareFailure?.call(this);
   }
@@ -195,27 +178,23 @@ abstract class MovieMiddlewareFailure
 }
 
 /// @nodoc
-abstract class $MovieServerFailureCopyWith<$Res> {
-  factory $MovieServerFailureCopyWith(
-          MovieServerFailure value, $Res Function(MovieServerFailure) then) =
-      _$MovieServerFailureCopyWithImpl<$Res>;
+abstract class _$$MovieServerFailureCopyWith<$Res> {
+  factory _$$MovieServerFailureCopyWith(_$MovieServerFailure value,
+          $Res Function(_$MovieServerFailure) then) =
+      __$$MovieServerFailureCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$MovieServerFailureCopyWithImpl<$Res>
-    extends _$MovieFailureCopyWithImpl<$Res>
-    implements $MovieServerFailureCopyWith<$Res> {
-  _$MovieServerFailureCopyWithImpl(
-      MovieServerFailure _value, $Res Function(MovieServerFailure) _then)
-      : super(_value, (v) => _then(v as MovieServerFailure));
-
-  @override
-  MovieServerFailure get _value => super._value as MovieServerFailure;
+class __$$MovieServerFailureCopyWithImpl<$Res>
+    extends _$MovieFailureCopyWithImpl<$Res, _$MovieServerFailure>
+    implements _$$MovieServerFailureCopyWith<$Res> {
+  __$$MovieServerFailureCopyWithImpl(
+      _$MovieServerFailure _value, $Res Function(_$MovieServerFailure) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-@Implements<ServerFailure>()
 class _$MovieServerFailure implements MovieServerFailure {
   const _$MovieServerFailure();
 
@@ -227,7 +206,7 @@ class _$MovieServerFailure implements MovieServerFailure {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is MovieServerFailure);
+        (other.runtimeType == runtimeType && other is _$MovieServerFailure);
   }
 
   @override
@@ -245,8 +224,8 @@ class _$MovieServerFailure implements MovieServerFailure {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? middlewareFailure,
-    TResult Function()? serverFailure,
+    TResult? Function()? middlewareFailure,
+    TResult? Function()? serverFailure,
   }) {
     return serverFailure?.call();
   }
@@ -276,8 +255,8 @@ class _$MovieServerFailure implements MovieServerFailure {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(MovieMiddlewareFailure value)? middlewareFailure,
-    TResult Function(MovieServerFailure value)? serverFailure,
+    TResult? Function(MovieMiddlewareFailure value)? middlewareFailure,
+    TResult? Function(MovieServerFailure value)? serverFailure,
   }) {
     return serverFailure?.call(this);
   }

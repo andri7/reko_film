@@ -62,9 +62,16 @@ import 'package:shared_preferences/shared_preferences.dart'
 
 // ignore_for_file: lines_longer_than_80_chars
 /// initializes the registration of provided dependencies inside of [GetIt]
-Future<_i1.GetIt> $initGetIt(_i1.GetIt get,
-    {String? environment, _i2.EnvironmentFilter? environmentFilter}) async {
-  final gh = _i2.GetItHelper(get, environment, environmentFilter);
+Future<_i1.GetIt> $initGetIt(
+  _i1.GetIt get, {
+  String? environment,
+  _i2.EnvironmentFilter? environmentFilter,
+}) async {
+  final gh = _i2.GetItHelper(
+    get,
+    environment,
+    environmentFilter,
+  );
   final localModule = _$LocalModule();
   final appModule = _$AppModule();
   gh.lazySingleton<_i3.ApiKeyInterceptor>(() => _i3.ApiKeyInterceptor());
@@ -78,43 +85,51 @@ Future<_i1.GetIt> $initGetIt(_i1.GetIt get,
       () => _i10.MovieDbService(get<_i6.Dio>()));
   gh.lazySingleton<_i11.MovieListMapper>(() => _i11.MovieListMapper());
   await gh.singletonAsync<_i12.MyDatabase>(
-      () => localModule.provideAppDatabase(),
-      preResolve: true);
+    () => localModule.provideAppDatabase(),
+    preResolve: true,
+  );
   gh.lazySingleton<_i13.NetworkInfo>(
       () => _i13.NetworkInfoImpl(get<_i8.InternetConnectionChecker>()));
   await gh.lazySingletonAsync<_i14.SharedPreferences>(
-      () => localModule.provideSharedPreference(),
-      preResolve: true);
+    () => localModule.provideSharedPreference(),
+    preResolve: true,
+  );
   gh.lazySingleton<_i15.UserLocalDataSource>(
       () => _i15.UserLocalDataSourceImpl(get<_i4.AuthDao>()));
   gh.lazySingleton<_i16.AuthPreferenceLocalDataSource>(() =>
       _i16.AuthPreferenceLocalDataSourceImpl(get<_i5.AuthSharedPreference>()));
   gh.lazySingleton<_i17.AuthRepository>(() => _i18.AuthRepositoryImpl(
-      get<_i15.UserLocalDataSource>(),
-      get<_i16.AuthPreferenceLocalDataSource>()));
+        get<_i15.UserLocalDataSource>(),
+        get<_i16.AuthPreferenceLocalDataSource>(),
+      ));
   gh.lazySingleton<_i19.CheckAuthStatus>(
       () => _i19.CheckAuthStatus(get<_i17.AuthRepository>()));
   gh.lazySingleton<_i20.MovieDbRemoteDataSource>(
       () => _i20.MovieDbRemoteDataSourceImpl(get<_i10.MovieDbService>()));
   gh.lazySingleton<_i21.MovieRepository>(() => _i22.MovieRepositoryImpl(
-      get<_i13.NetworkInfo>(),
-      get<_i20.MovieDbRemoteDataSource>(),
-      get<_i11.MovieListMapper>()));
+        get<_i13.NetworkInfo>(),
+        get<_i20.MovieDbRemoteDataSource>(),
+        get<_i11.MovieListMapper>(),
+      ));
   gh.lazySingleton<_i23.UserLogin>(
       () => _i23.UserLogin(get<_i17.AuthRepository>()));
   gh.lazySingleton<_i24.UserLogout>(
       () => _i24.UserLogout(get<_i17.AuthRepository>()));
   gh.factory<_i25.UserRegister>(
       () => _i25.UserRegister(get<_i17.AuthRepository>()));
-  gh.factory<_i26.AuthStatusBloc>(() =>
-      _i26.AuthStatusBloc(get<_i19.CheckAuthStatus>(), get<_i24.UserLogout>()));
+  gh.factory<_i26.AuthStatusBloc>(() => _i26.AuthStatusBloc(
+        get<_i19.CheckAuthStatus>(),
+        get<_i24.UserLogout>(),
+      ));
   gh.lazySingleton<_i27.GetMovieList>(
       () => _i27.GetMovieList(get<_i21.MovieRepository>()));
   gh.factory<_i28.LoginFormBloc>(
       () => _i28.LoginFormBloc(get<_i23.UserLogin>()));
   gh.factory<_i29.MovieBloc>(() => _i29.MovieBloc(get<_i27.GetMovieList>()));
-  gh.factory<_i30.RegisterFormBloc>(() =>
-      _i30.RegisterFormBloc(get<_i25.UserRegister>(), get<_i23.UserLogin>()));
+  gh.factory<_i30.RegisterFormBloc>(() => _i30.RegisterFormBloc(
+        get<_i25.UserRegister>(),
+        get<_i23.UserLogin>(),
+      ));
   return get;
 }
 

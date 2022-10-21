@@ -6,7 +6,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_config/flutter_config.dart';
 import 'package:reko_film/app/injector.dart';
+import 'package:reko_film/firebase_options.dart';
 import 'package:reko_film/utils/constant.dart';
+import 'package:firebase_core/firebase_core.dart';
+
 class AppBlocObserver extends BlocObserver {
   @override
   void onChange(BlocBase bloc, Change change) {
@@ -29,7 +32,7 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
   }
 
   await configureDependencies(ApiConstant.ENV);
-
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'register_form.dart';
@@ -11,26 +12,7 @@ part of 'register_form.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RegisterFormTearOff {
-  const _$RegisterFormTearOff();
-
-  _RegisterForm call(
-      {required EmailAddress emailAddress,
-      required Username username,
-      required Password password}) {
-    return _RegisterForm(
-      emailAddress: emailAddress,
-      username: username,
-      password: password,
-    );
-  }
-}
-
-/// @nodoc
-const $RegisterForm = _$RegisterFormTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$RegisterForm {
@@ -47,77 +29,81 @@ mixin _$RegisterForm {
 abstract class $RegisterFormCopyWith<$Res> {
   factory $RegisterFormCopyWith(
           RegisterForm value, $Res Function(RegisterForm) then) =
-      _$RegisterFormCopyWithImpl<$Res>;
+      _$RegisterFormCopyWithImpl<$Res, RegisterForm>;
+  @useResult
   $Res call({EmailAddress emailAddress, Username username, Password password});
 }
 
 /// @nodoc
-class _$RegisterFormCopyWithImpl<$Res> implements $RegisterFormCopyWith<$Res> {
+class _$RegisterFormCopyWithImpl<$Res, $Val extends RegisterForm>
+    implements $RegisterFormCopyWith<$Res> {
   _$RegisterFormCopyWithImpl(this._value, this._then);
 
-  final RegisterForm _value;
   // ignore: unused_field
-  final $Res Function(RegisterForm) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? emailAddress = freezed,
-    Object? username = freezed,
-    Object? password = freezed,
+    Object? emailAddress = null,
+    Object? username = null,
+    Object? password = null,
   }) {
     return _then(_value.copyWith(
-      emailAddress: emailAddress == freezed
+      emailAddress: null == emailAddress
           ? _value.emailAddress
           : emailAddress // ignore: cast_nullable_to_non_nullable
               as EmailAddress,
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as Username,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as Password,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$RegisterFormCopyWith<$Res>
+abstract class _$$_RegisterFormCopyWith<$Res>
     implements $RegisterFormCopyWith<$Res> {
-  factory _$RegisterFormCopyWith(
-          _RegisterForm value, $Res Function(_RegisterForm) then) =
-      __$RegisterFormCopyWithImpl<$Res>;
+  factory _$$_RegisterFormCopyWith(
+          _$_RegisterForm value, $Res Function(_$_RegisterForm) then) =
+      __$$_RegisterFormCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({EmailAddress emailAddress, Username username, Password password});
 }
 
 /// @nodoc
-class __$RegisterFormCopyWithImpl<$Res> extends _$RegisterFormCopyWithImpl<$Res>
-    implements _$RegisterFormCopyWith<$Res> {
-  __$RegisterFormCopyWithImpl(
-      _RegisterForm _value, $Res Function(_RegisterForm) _then)
-      : super(_value, (v) => _then(v as _RegisterForm));
+class __$$_RegisterFormCopyWithImpl<$Res>
+    extends _$RegisterFormCopyWithImpl<$Res, _$_RegisterForm>
+    implements _$$_RegisterFormCopyWith<$Res> {
+  __$$_RegisterFormCopyWithImpl(
+      _$_RegisterForm _value, $Res Function(_$_RegisterForm) _then)
+      : super(_value, _then);
 
-  @override
-  _RegisterForm get _value => super._value as _RegisterForm;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? emailAddress = freezed,
-    Object? username = freezed,
-    Object? password = freezed,
+    Object? emailAddress = null,
+    Object? username = null,
+    Object? password = null,
   }) {
-    return _then(_RegisterForm(
-      emailAddress: emailAddress == freezed
+    return _then(_$_RegisterForm(
+      emailAddress: null == emailAddress
           ? _value.emailAddress
           : emailAddress // ignore: cast_nullable_to_non_nullable
               as EmailAddress,
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as Username,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as Password,
@@ -149,31 +135,31 @@ class _$_RegisterForm implements _RegisterForm {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RegisterForm &&
-            const DeepCollectionEquality()
-                .equals(other.emailAddress, emailAddress) &&
-            const DeepCollectionEquality().equals(other.username, username) &&
-            const DeepCollectionEquality().equals(other.password, password));
+            other is _$_RegisterForm &&
+            (identical(other.emailAddress, emailAddress) ||
+                other.emailAddress == emailAddress) &&
+            (identical(other.username, username) ||
+                other.username == username) &&
+            (identical(other.password, password) ||
+                other.password == password));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(emailAddress),
-      const DeepCollectionEquality().hash(username),
-      const DeepCollectionEquality().hash(password));
+  int get hashCode =>
+      Object.hash(runtimeType, emailAddress, username, password);
 
   @JsonKey(ignore: true)
   @override
-  _$RegisterFormCopyWith<_RegisterForm> get copyWith =>
-      __$RegisterFormCopyWithImpl<_RegisterForm>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_RegisterFormCopyWith<_$_RegisterForm> get copyWith =>
+      __$$_RegisterFormCopyWithImpl<_$_RegisterForm>(this, _$identity);
 }
 
 abstract class _RegisterForm implements RegisterForm {
   const factory _RegisterForm(
-      {required EmailAddress emailAddress,
-      required Username username,
-      required Password password}) = _$_RegisterForm;
+      {required final EmailAddress emailAddress,
+      required final Username username,
+      required final Password password}) = _$_RegisterForm;
 
   @override
   EmailAddress get emailAddress;
@@ -183,6 +169,6 @@ abstract class _RegisterForm implements RegisterForm {
   Password get password;
   @override
   @JsonKey(ignore: true)
-  _$RegisterFormCopyWith<_RegisterForm> get copyWith =>
+  _$$_RegisterFormCopyWith<_$_RegisterForm> get copyWith =>
       throw _privateConstructorUsedError;
 }

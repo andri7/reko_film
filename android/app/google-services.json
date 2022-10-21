@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "962078767853",
+    "firebase_url": "https://reko-film-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "reko-film",
+    "storage_bucket": "reko-film.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962078767853:android:cb38b7b60b76d5df4e6ae4",
+        "android_client_info": {
+          "package_name": "com.kms.rekofilm.reko_film"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962078767853-t1nq1t1g1stdkfroos6e9undo9pe6hrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKReCFdLf1qDEa8G2AdqRUZz9ffGnI6Ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962078767853-t1nq1t1g1stdkfroos6e9undo9pe6hrf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "962078767853-ipfh7sgs7aub9iv77f3l53etsfvt4mrd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kms.rekofilm.rekoFilm"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
