@@ -17,46 +17,45 @@ import 'package:reko_film/core/di/app_module.dart' as _i32;
 import 'package:reko_film/core/di/dio_module.dart' as _i7;
 import 'package:reko_film/core/di/local_module.dart' as _i31;
 import 'package:reko_film/core/local/my_database.dart' as _i12;
-import 'package:reko_film/features/features/authentication/data/datasources/db/user_local_data_source.dart'
+import 'package:reko_film/features/authentication/data/datasources/db/user_local_data_source.dart'
     as _i15;
-import 'package:reko_film/features/features/authentication/data/datasources/preference/auth_preference_local_data_source.dart'
+import 'package:reko_film/features/authentication/data/datasources/preference/auth_preference_local_data_source.dart'
     as _i16;
-import 'package:reko_film/features/features/authentication/data/datasources/preference/auth_shared_preference.dart'
+import 'package:reko_film/features/authentication/data/datasources/preference/auth_shared_preference.dart'
     as _i5;
-import 'package:reko_film/features/features/authentication/data/repositories/auth_repository_impl.dart'
+import 'package:reko_film/features/authentication/data/repositories/auth_repository_impl.dart'
     as _i18;
-import 'package:reko_film/features/features/authentication/data/services/auth_dao.dart'
+import 'package:reko_film/features/authentication/data/services/auth_dao.dart'
     as _i4;
-import 'package:reko_film/features/features/authentication/domain/repositories/auth_repository.dart'
+import 'package:reko_film/features/authentication/domain/repositories/auth_repository.dart'
     as _i17;
-import 'package:reko_film/features/features/authentication/domain/usecases/check_auth_status.dart'
+import 'package:reko_film/features/authentication/domain/usecases/check_auth_status.dart'
     as _i19;
-import 'package:reko_film/features/features/authentication/domain/usecases/user_login.dart'
+import 'package:reko_film/features/authentication/domain/usecases/user_login.dart'
     as _i23;
-import 'package:reko_film/features/features/authentication/domain/usecases/user_logout.dart'
+import 'package:reko_film/features/authentication/domain/usecases/user_logout.dart'
     as _i24;
-import 'package:reko_film/features/features/authentication/domain/usecases/user_register.dart'
+import 'package:reko_film/features/authentication/domain/usecases/user_register.dart'
     as _i25;
-import 'package:reko_film/features/features/authentication/present/blocs/auth_status_bloc/auth_status_bloc.dart'
+import 'package:reko_film/features/authentication/present/blocs/auth_status_bloc/auth_status_bloc.dart'
     as _i26;
-import 'package:reko_film/features/features/authentication/present/blocs/login_form/login_form_bloc.dart'
+import 'package:reko_film/features/authentication/present/blocs/login_form/login_form_bloc.dart'
     as _i28;
-import 'package:reko_film/features/features/authentication/present/blocs/register_form/register_form_bloc.dart'
+import 'package:reko_film/features/authentication/present/blocs/register_form/register_form_bloc.dart'
     as _i30;
-import 'package:reko_film/features/features/movie/data/datasources/movie_db_remote_data_source.dart'
+import 'package:reko_film/features/movie/data/datasources/movie_db_remote_data_source.dart'
     as _i20;
-import 'package:reko_film/features/features/movie/data/datasources/services/movie_db_service.dart'
+import 'package:reko_film/features/movie/data/datasources/services/movie_db_service.dart'
     as _i10;
-import 'package:reko_film/features/features/movie/data/mapper/movie_list_mapper.dart'
+import 'package:reko_film/features/movie/data/mapper/movie_list_mapper.dart'
     as _i11;
-import 'package:reko_film/features/features/movie/data/repositories/movie_repository_impl.dart'
+import 'package:reko_film/features/movie/data/repositories/movie_repository_impl.dart'
     as _i22;
-import 'package:reko_film/features/features/movie/domain/repositories/movie_repository.dart'
+import 'package:reko_film/features/movie/domain/repositories/movie_repository.dart'
     as _i21;
-import 'package:reko_film/features/features/movie/domain/usecases/get_movie_list.dart'
+import 'package:reko_film/features/movie/domain/usecases/get_movie_list.dart'
     as _i27;
-import 'package:reko_film/features/features/movie/present/blocs/movie_bloc.dart'
-    as _i29;
+import 'package:reko_film/features/movie/present/blocs/movie_bloc.dart' as _i29;
 import 'package:shared_preferences/shared_preferences.dart'
     as _i14; // ignore_for_file: unnecessary_lambdas
 

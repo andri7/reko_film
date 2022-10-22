@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:floor/floor.dart';
-import 'package:reko_film/features/features/authentication/data/models/user_models.dart';
-import 'package:reko_film/features/features/authentication/data/services/auth_dao.dart';
+import 'package:reko_film/features/authentication/data/models/user_models.dart';
+import 'package:reko_film/features/authentication/data/services/auth_dao.dart';
 import 'package:sqflite/sqflite.dart' as sqflite;
 
 part 'my_database.g.dart';
