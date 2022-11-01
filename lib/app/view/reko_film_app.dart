@@ -7,6 +7,7 @@ import 'package:reko_film/app/routes/route.dart';
 import 'package:reko_film/features/authentication/present/blocs/auth_status_bloc/auth_status_bloc.dart';
 import 'package:reko_film/features/authentication/present/pages/login/login_page.dart';
 import 'package:reko_film/features/authentication/present/pages/register/register_page.dart';
+import 'package:reko_film/features/main/main_page.dart';
 import 'package:reko_film/features/movie/domain/entities/movie_list.dart';
 import 'package:reko_film/features/movie/present/pages/detail/movie_detail_page.dart';
 import 'package:reko_film/features/movie/present/pages/home/home_movie_list_page.dart';
@@ -41,6 +42,10 @@ class RekoFilmApp extends StatelessWidget {
           GoRoute(
             path: register,
             builder: (context, state) => const RegisterPage(),
+          ),
+          GoRoute(
+            path: mainApp,
+            builder: (context, state) => const MainPage(),
           ),
           GoRoute(
             path: movie,
